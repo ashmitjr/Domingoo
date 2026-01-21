@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+}
+
+.panels{
+    height: 100%;
+    background-color: black;
+    border: 1px springgreen solid;
+}
+
+.leftpanel{
+    width: 15%;
+    background-color: #2C2C2C;
+}
+
+.canvas{
+    width: 70%;
+}   
+
+.canvasContainer{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.mainCanvas{
+    height: 2000px;
+    width: 2000px;
+    background-color: rgb(214, 44, 44);
+}
+
+.rightpanel{
+    width: 15%;
+}
