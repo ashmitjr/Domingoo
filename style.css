@@ -1,48 +1,177 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     height: 100%;
     width: 100%;
 }
 
-main{
+main {
     height: 100%;
     width: 100%;
-    background-color: #212121;
     display: flex;
+    background-color: #212121;
 }
 
-.panels{
+.panels {
     height: 100%;
-    background-color: black;
-    border: 1px springgreen solid;
 }
 
-.leftpanel{
+.leftpanel {
     width: 15%;
+    min-width: 220px;
     background-color: #2C2C2C;
+    border-right: 1px solid rgb(101, 101, 101);
+    overflow: hidden;
+    transition: width 0.25s ease;
 }
 
-.canvas{
-    width: 70%;
-}   
+.domingo {
+    height: 60px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid rgb(101, 101, 101);
+}
 
-.canvasContainer{
+.domingo .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.domingo img {
+    height: 32px;
+    width: 32px;
+}
+
+.domingo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.hide-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.shortcuts,
+.layers {
+    padding: 12px;
+    color: white;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgb(101, 101, 101);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.shortcuts h4,
+.layers h4 {
+    margin-bottom: 6px;
+    opacity: 0.7;
+}
+
+.layers .empty {
+    opacity: 0.5;
+}
+
+.layers .layer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    cursor: pointer;
+    padding: 2px 2px;
+}
+
+.layers .layer:hover {
+    background-color: rgb(60, 60, 60);
+    border-radius: 5px;
+}
+
+
+.leftpanel.collapsed {
+    width: 3%;
+    min-width: 3%;
+}
+
+.leftpanel.collapsed .shortcuts,
+.leftpanel.collapsed .layers,
+.leftpanel.collapsed .brand  {
+    display: none;
+}
+
+.canvas {
+    flex: 1;
+    max-width: 70%;
+}
+
+.canvasContainer {
     height: 100%;
     width: 100%;
     overflow: auto;
+    scrollbar-width: none;
 }
 
-.mainCanvas{
+.rect {
+    height: 150px;
+    width: 150px;
+    background-color: teal;
+}
+
+.mainCanvas {
     height: 2000px;
     width: 2000px;
-    background-color: rgb(214, 44, 44);
+    position: relative;
+    padding: 2vh 2vw;
+    color: white;
 }
 
-.rightpanel{
+.toolbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 14px;
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    border: 0.5px solid rgb(101, 101, 101);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.toolbar .buttons {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.buttons:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.buttons.active {
+    background-color: rgb(80, 80, 80);
+}
+
+
+.rightpanel {
     width: 15%;
+    min-width: 220px;
+    background-color: #2C2C2C;
+    border-left: 1px solid rgb(101, 101, 101);
+    position: relative;
 }
