@@ -18,17 +18,3 @@ function togglePanel() {
 }
 
 togglePanel();
-
-function LayersPanel() {
-    const layerItem = document.querySelector('.layer');
-
-layerItem.addEventListener('click', () => {
-  const targetId = layerItem.dataset.target;
-  const element = document.getElementById(targetId);
-
- 
-  element.style.outline = '2px solid #fff';
-});
-
-}  
-LayersPanel();
