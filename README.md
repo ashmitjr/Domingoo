@@ -7,6 +7,8 @@ This project was given by **Sheriyans Coding School (Cohort2.0)** as part of an 
 
 The task was to build a **DOM-based project** by following the requirements mentioned in the problem statement. The focus was on functionality, interactions, and proper DOM handling, without using any frameworks or libraries.
 
+Live link : https://domingoo.vercel.app/
+
 ## My Approach
 
 I first understood what features were required and what was not allowed in the task.  
