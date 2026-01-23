@@ -92,17 +92,6 @@ main {
     background-color: rgb(60, 60, 60);
 }
 
-.leftpanel.collapsed {
-    width: 3%;
-    min-width: 3%;
-}
-
-.leftpanel.collapsed .shortcuts,
-.leftpanel.collapsed .layers,
-.leftpanel.collapsed .brand {
-    display: none;
-}
-
 
 .canvas {
     flex: 1;
