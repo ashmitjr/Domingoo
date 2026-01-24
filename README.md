@@ -9,6 +9,10 @@ The task was to build a **DOM-based project** by following the requirements ment
 
 Live link : https://domingoo.vercel.app/
 
+Preview : 
+<img width="1919" height="907" alt="Screenshot 2026-01-24 111531" src="https://github.com/user-attachments/assets/8267578a-d4cb-436f-a888-6f69e154e1ee" />
+
+
 ## My Approach
 
 I first understood what features were required and what was not allowed in the task.  
